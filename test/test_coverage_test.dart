@@ -7,6 +7,7 @@ import 'package:test_coverage/test_coverage.dart';
 void main() {
   final stubPath = path.join(Directory.current.path, 'test', 'stub_package');
   final stubRoot = Directory(stubPath);
+
   group('findTestFiles', () {
     test('finds only test files', () {
       final result = findTestFiles(stubRoot);
@@ -48,7 +49,7 @@ void main() {
     });
   });
 
-  group('$TestFileInfo', () {
+  group('TestFileInfo', () {
     test('for file', () {
       final a = File(path.join(stubPath, 'test', 'a_test.dart'));
       final info = TestFileInfo.forFile(a);

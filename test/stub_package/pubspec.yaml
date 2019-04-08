@@ -1,11 +1,13 @@
 name: stub_package
 description: Stub package for tests
 version: 0.0.0
-homepage: https://github.com/pulyaevskiy/test-coverage
-author: Anatoly Pulyaevskiy <anatoly.pulyaevskiy@gmail.com>
+homepage: https://github.com/vitusortner/test_coverage
+authors:
+  - Anatoly Pulyaevskiy <anatoly.pulyaevskiy@gmail.com>
+  - Vitus Ortner <vitusortner.dev@gmail.com>
 
 environment:
-  sdk: '>=2.0.0-dev.66.0 <2.0.0'
+  sdk: '>=2.1.0 <3.0.0'
 
 dev_dependencies:
   test: ^1.0.0

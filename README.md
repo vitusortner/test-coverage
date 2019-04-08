@@ -1,4 +1,4 @@
-# test_coverage [![Build Status](https://travis-ci.com/pulyaevskiy/test-coverage.svg?branch=master)](https://travis-ci.com/pulyaevskiy/test-coverage)
+# test_coverage [![Build Status](https://travis-ci.com/vitusortner/test_coverage.svg?branch=master)](https://travis-ci.com/vitusortner/test_coverage)
 
 A simple command-line tool to collect test coverage information from
 Dart VM tests. It is useful if you need to generate coverage reports
@@ -10,7 +10,7 @@ Add dev dependency to your `pubspec.yaml`:
 
 ```yaml
 dev_dependencies:
-  test_coverage: ^0.2.0
+  test_coverage: ^0.3.0
 ```
 
 Run `pub get` to install. Then, in the root of your project run:
@@ -72,8 +72,7 @@ void main() {
 Following command is used to run the tests:
 
 ```
-dart --pause-isolates-on-exit --enable_asserts --enable-vm-service \
-  test/.test_coverage.dart
+dart --pause-isolates-on-exit --enable-vm-service test/.test_coverage.dart
 ```
 
 ### 3. Collects and formats coverage information
@@ -84,4 +83,4 @@ When test execution is completed the tool uses functionality of the
 Feel free to file feature requests and bug reports at the
 [issue tracker][].
 
-[issue tracker]: https://github.com/pulyaevskiy/test-coverage/issues
+[issue tracker]: https://github.com/vitusortner/test_coverage/issues

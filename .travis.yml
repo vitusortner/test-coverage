@@ -1,14 +1,12 @@
 language: dart
 
 dart:
-- dev
+  - dev
 
-#before_script:
-#- pub global activate --source path .
 
 script:
-- pub run test -r expanded
-- dartfmt -n --set-exit-if-changed lib/
-- dartanalyzer --fatal-infos --fatal-warnings .
-#- pub global run test_coverage
-#- bash <(curl -s https://codecov.io/bash)
+  - pub run test -r expanded
+  - dartfmt -n --set-exit-if-changed lib/
+  - dartanalyzer --fatal-infos --fatal-warnings .
+  #- pub global run test_cov
+  #- bash <(curl -s https://codecov.io/bash)

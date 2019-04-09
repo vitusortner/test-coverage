@@ -4,7 +4,7 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:test_coverage/test_coverage.dart';
+import 'package:test_cov/test_cov.dart';
 
 Future main(List<String> arguments) async {
   final packageRoot = Directory.current;
@@ -12,7 +12,7 @@ Future main(List<String> arguments) async {
   print('Found ${testFiles.length} test files.');
 
   generateMainScript(packageRoot, testFiles);
-  print('Generated test-all script in test/.test_coverage.dart.');
+  print('Generated test-all script in test/.test_cov.dart.');
 
   await runTestsAndCollect(Directory.current.path);
 }

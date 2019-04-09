@@ -1,7 +1,7 @@
 name: stub_package
 description: Stub package for tests
 version: 0.0.0
-homepage: https://github.com/vitusortner/test_coverage
+homepage: https://github.com/vitusortner/test_cov
 authors:
   - Anatoly Pulyaevskiy <anatoly.pulyaevskiy@gmail.com>
   - Vitus Ortner <vitusortner.dev@gmail.com>
